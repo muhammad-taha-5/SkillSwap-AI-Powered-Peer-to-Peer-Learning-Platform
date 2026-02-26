@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap | Elite Peer-to-Peer Learning</title>
+    <meta name="description" content="Premium skill-swapping platform for high-end creators and developers.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Authentication Hub -->
+    <div id="auth-container"></div>
+
+    <div class="app-container app-hidden">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar glass">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i data-lucide="zap"></i>
+                </div>
+                <span class="logo-text">SkillSwap</span>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" data-page="dashboard">
+                    <i data-lucide="layout-dashboard"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item" data-page="discover">
+                    <i data-lucide="search"></i>
+                    <span>Discover</span>
+                </a>
+                <a href="#" class="nav-item" data-page="matches">
+                    <i data-lucide="zap"></i>
+                    <span>Skill Swiper</span>
+                </a>
+                <a href="#" class="nav-item" data-page="skillmap">
+                    <i data-lucide="globe"></i>
+                    <span>Skill Map</span>
+                </a>
+                <a href="#" class="nav-item" data-page="messages">
+                    <i data-lucide="message-square"></i>
+                    <span>Messages</span>
+                </a>
+                <a href="#" class="nav-item" data-page="settings">
+                    <i data-lucide="settings"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="profile-preview glass">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=MTK" alt="Profile" class="avatar">
+                <div class="profile-info">
+                    <span class="profile-name">M.TAHA KHUWAJA</span>
+                    <span class="profile-status">Elite Member</span>
+                </div>
+                <i data-lucide="more-vertical" class="more-icon"></i>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-box glass">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Search for skills, mentors, or topics...">
+                </div>
+                <div class="top-actions">
+                    <button class="icon-btn glass">
+                        <i data-lucide="bell"></i>
+                        <span class="notification-dot"></span>
+                    </button>
+                    <button class="upgrade-btn">
+                        Upgrade to Elite
+                    </button>
+                </div>
+            </header>
+
+            <div id="page-content" class="fade-in">
+                <!-- Content will be injected here by app.js -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+
+</html>
